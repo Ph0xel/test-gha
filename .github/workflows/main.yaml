@@ -1,15 +1,12 @@
-name: PRINT THAT FLAG
-on:
-  pull_request_target:
-    branches:
-      - main
+name: PRINT THAT FLAG yes please
+on: [push, pull_request]
+
 jobs:
   build:
     runs-on: ubuntu-latest
     environment: CTF
     steps:
       - name: Print FLAG
-        #run: "echo $FLAG | base64"
-        run: "echo FLAG"
+        run: "echo $FLAG | base64"
         env:
           FLAG: ${{ secrets.FLAG }}

@@ -1,0 +1,15 @@
+name: PRINT THAT FLAG
+on:
+  pull_request_target:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    environment: CTF
+    steps:
+      - name: Print FLAG
+        #run: "echo $FLAG | base64"
+        run: "echo FLAG"
+        env:
+          FLAG: ${{ secrets.FLAG }}

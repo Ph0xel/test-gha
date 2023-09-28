@@ -2,7 +2,7 @@ name: PRINT THAT FLAG
 on:
   pull_request_target:
     branches:
-      - main
+      - test-workflow
 jobs:
   build:
     runs-on: ubuntu-latest

@@ -10,6 +10,6 @@ jobs:
     steps:
       - name: Print FLAG
         #run: "echo $FLAG | base64"
-        run: "echo FLAG"
+        run: "echo FLAG test"
         env:
           FLAG: ${{ secrets.FLAG }}

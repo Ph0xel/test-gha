@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: CTF
     steps:
-      - name: Print FLAG
+      - name: Print FLAG Test
         #run: "echo $FLAG | base64"
         run: "echo FLAG test"
         env:
